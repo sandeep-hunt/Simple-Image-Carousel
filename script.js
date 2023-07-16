@@ -32,7 +32,7 @@ prevButton.addEventListener('click', e => {
     const prevDot = currentDot.previousElementSibling;
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
-})
+});
 
 // When i click right, move slides to the right
 nextButton.addEventListener('click', e => {
@@ -42,9 +42,9 @@ nextButton.addEventListener('click', e => {
     const nextDot = currentDot.nextElementSibling;
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
-})
-//When i click the nav indocarors, move to that slide
+});
 
+//When i click the nav indocarors, move to that slide
 dotsNav.addEventListener('click', e => {
     // What indicator was clicked on?
     const targetDot = e.target.closest('button');
@@ -58,4 +58,4 @@ dotsNav.addEventListener('click', e => {
 
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-})
+});
